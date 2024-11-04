@@ -17,10 +17,10 @@ h1{
     font-weight: bold;
     color: white;
     text-shadow: 2px 2px 4px lightcoral;
-    background-color: rgba(0, 0, 139, 0.753);
+    background-color: rgba(0, 0, 139, 0.603);
     box-shadow: 0px 2px 20px gold;
     padding: 10px 5px;
-    border-radius: 10px;
+    border-radius: 20px;
     
 }
 h1 ion-icon{
@@ -28,16 +28,19 @@ h1 ion-icon{
     font-weight: bold;
     font-size: 30px;
     border-bottom: 2px solid gold;
-    box-shadow: 0px 2px 10px blue;
+    box-shadow: 0px 2px 10px #ff1060e8;
     border-radius: 50px;
     background-image: url(lollipop_3GIF.gif);
     background-size: cover;
     background-position: center;
 }
+body.light h1 ion-icon{
+    box-shadow: 0px 2px 15px blue;
+}
 h3{ 
     font-size: 16px;
     position: absolute;
-    bottom: 40px;
+    bottom: 50px;
     color: white;
     text-shadow: 2px 2px 2px blue;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -80,6 +83,11 @@ h3 ion-icon{
     border: 2px solid rgba(255, 217, 0, 0.801);
     transform: rotate(calc(360deg/8 * var(--i)));
     transform-origin: 190px;
+    box-shadow: 0px 2px 20px blue;
+}
+body.light .img .imgBox{
+    box-shadow: 0px 2px 15px #ff105e;
+    border: 2px solid rgba(255, 217, 0, 0.863);
 }
 
 .img .imgBox img{
@@ -128,7 +136,7 @@ h3 ion-icon{
     font-weight: bold;
     transition: background-color 0.5s ease, color 0.5s ease;
     box-shadow: 0px 2px 10px gold;
-    border-bottom: 2px solid #ff105e;
+    border-bottom: 2px solid  blue;
     
 }
 .toggleClass ion-icon{
@@ -144,7 +152,7 @@ body.light .toggleClass{
     color:  black;
     transition: background-color 0.5s ease, color 0.5s ease;
     box-shadow: 0px 2px 10px darkblue;
-    border-bottom: 2px solid gold;
+    border-bottom: 2px solid #ff105e;
     border-radius: 10px;
 }
 
@@ -166,3 +174,42 @@ body.light .toggleClass ion-icon{
     opacity: 80%;
     padding: 2px 4px;
  }
+
+ .homebtn{
+    position: absolute;
+    bottom: 10px;
+    background-image: url(MusicGig.gif);
+    background-position: center;
+    background-size: 80%; 
+    padding: 0px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 10px gold;
+    border-bottom: 1px solid blue;
+}
+.homebtn:hover{  
+    background: rgba(0, 0, 139, 0.822); 
+   
+}
+.homebtn ion-icon{
+    color: rgba(255, 217, 0, 0.678);   
+    font-size: 20px;
+}
+.homebtn:active{
+    background-color: blue;
+}
+
+body.light .homebtn{
+    background-color: #ff10608c;
+    box-shadow: 0px 2px 10px blue;
+    border-bottom: 2px solid #fc4280b7;
+   
+}
+body.light .homebtn:hover{  
+    background: #ff105e; 
+}
+
+body.light .homebtn:active{
+background-color: #ff105e;
+}
